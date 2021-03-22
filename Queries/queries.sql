@@ -4,8 +4,10 @@ AND priceEach > 100
 
 
 SELECT * FROM `payments`
-WHERE paymentDate LIKE '________05%'
-OR paymentDate LIKE '________06%'
+WHERE paymentDate LIKE '%-05-%'
+OR paymentDate LIKE '%-06-%'
+OR paymentDate LIKE '__05%'
+OR paymentDate LIKE '__06%'
 
 
 SELECT * FROM `customers`
